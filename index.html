@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <title>day1_web_application</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#banner">home</a>
+                        <a href="#cars">cars</a>
+                        <a href="#about">about</a>
+                        <a href="#contact">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="banner">
+            <h1>BMW CARS</h1>
+            <p>BMW: Precision engineering and luxury for an unparalleled driving experience.</p>
+            <a class="cts" href="#cars">cars</a>
+        </section>
+        <section id="cars">
+            <h1>Cars from BMW</h1>
+            <div class="car">
+                <img class="car-icon" src="car1.jpg" alt="car1">
+                <h3>BMW 650D</h3>
+                <p>"BMW 650d: Luxurious design, powerful performance, and refined driving experience."</p><br>
+                <p>price: $80,000</p><br>
+                <a class="cts" href="#buy">buy</a>
+            </div>
+            <div class="car">
+                <img class="car-icon" src="car2.jpg" alt="car1">
+                <h3>BMW i5</h3>
+                <p>"BMW i5: Cutting-edge electric performance with luxury and innovation."</p><br>
+                <p>price: $130,000</p><br>
+                <a class="cts" href="#buy">buy</a>
+            </div>
+            <div class="car">
+                <img class="car-icon" src="car3.jpg" alt="car1">
+                <h3>BMW M8</h3>
+                <p>"BMW M8: Exhilarating performance meets unrivaled luxury and precision."</p><br>
+                <p>price: $100,000</p><br>
+                <a class="cts" href="#buy">buy</a>
+            </div>
+        </section>
+        <section id="about">
+            <h1>
+                About BMW
+            </h1>
+            <p>BMW (Bayerische Motoren Werke AG) is a leading German automobile manufacturer renowned for producing luxury vehicles and high-performance motorcycles. Established in 1916, BMW has built a reputation for engineering excellence, innovative technology, and stylish design. The company is celebrated for its commitment to driving dynamics and quality, offering a diverse lineup that includes sporty sedans, elegant coupes, versatile SUVs, and cutting-edge electric vehicles. BMW’s hallmark is the "Ultimate Driving Machine" philosophy,
+                 which emphasizes a blend of performance, luxury, and advanced technology to deliver an exceptional driving experience.</p>
+        </section>
+        <section id="contact">
+            <h1>contact form</h1>
+            <div id="error">
+                <form id="contactForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email"><br>
+                    <label for="phoneno">Phone No:</label>
+                    <input type="number" id="phoneno" placeholder="Phone Number"><br>
+                    <label for="msg">Enter the Message:</label>
+                    <textarea id="msg" placeholder="Enter message here"></textarea><br>
+                    <span class="error" id="error-message"></span><br>
+                    <input type="button" value="Submit" onclick="validateForm()">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p><I>2024 developed by sanpras all rights reserved  &copy;</I></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+:root {
+    --primary-color: #201E43; /* Define your color variable */
+    --secondary-color: #134B70;
+    --text-color: #EEEEEE;
+    --para-color: #508C9B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 30px;
+}
+
+header, nav {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Ensure the nav spans the full width of the viewport */
+    z-index: 1000; /* Ensures the nav is above other content */
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding-top: 10px;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    font-size: 25px;
+    text-align: right;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: var(--text-color);
+}
+
+nav ul li a:hover {
+    background-color: #508C9B;
+    border-radius: 30px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+
+#banner {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.246)0%,
+        rgba(65,60,60,0.8)280%
+    ),
+    url("background.jpg");
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    padding: 350px;
+    color: aquamarine;
+    text-align: center;
+}
+
+#banner h1{
+    font-size: 56px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+#banner p{
+    color: var(--para-color);
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.cts {
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    display: inline-block;
+    border-radius: 25px;
+    padding: 10px 30px;
+    padding-bottom: 10px;
+    width: 3rem;
+}
+
+.cts:hover {
+    opacity: 0.8;
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: #508C9B;
+    text-transform: capitalize;
+    text-shadow: #EEEEEE;
+}
+
+#cars {
+    text-align: center;
+    color: var(--text-color);
+    padding: 0px 200px 200px 200px;
+    margin-right: 10px;
+}
+
+#cars h1{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.car {
+    display: inline-block;
+    background-color: #5B99C2;
+    padding: 1.5rem;
+    margin-bottom: 30px;
+    border-radius: 3rem;
+    width: 15rem;
+    font-size: 1rem;
+    height: 25rem;
+    margin-right: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.car-icon {
+    width: 250px;
+    height: 200px;
+    border-radius: 1rem;
+}
+
+
+#about {
+    text-align: start;
+    color: black;
+    background-color: var(--para-color);
+    padding: 0px 200px 200px 200px;
+    margin-right: 10px;
+}
+
+#about h1{
+    padding-bottom: 100px;
+    color: var(--primary-color);
+    padding-top: 100px;
+}
+
+#contact {
+    text-align: center;
+    color: black;
+    padding: 0px 200px 200px 200px;
+    margin-right: 10px;
+    padding-bottom: 430px;
+}
+
+#contact h1 {
+    padding-top: 100px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#contact div{
+    background-color: var(--secondary-color);
+    border-radius: 2.5rem;
+    padding: 10rem;
+}
+
+#contact div form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact div form input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%; /* Full width of the form */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 16px; /* Space below each input field */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners for input fields */
+    font-size: 16px; /* Font size inside input fields */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#contact div form input[type="button"] {
+    background-color: var(--secondary-color);
+    color: var(--primary-color); /* Button text color */
+    border: none; /* Remove default border */
+    padding: 15px 30px; /* Padding inside the button */
+    border-radius: 25px; /* Rounded corners for the button */
+    font-size: 16px; /* Font size inside the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and shadow */
+}
+
+#contact div form input[type="button"]:hover {
+    background-color: #508C9B; /* Change background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+
